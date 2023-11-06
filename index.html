@@ -1,0 +1,1935 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> system.conf</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Gocce Reklam ve Yazılım Ajansı &raquo; beslemesi"
+      href="https://link.gocce.com.tr/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Gocce Reklam ve Yazılım Ajansı &raquo; yorum beslemesi"
+      href="https://link.gocce.com.tr/comments/feed/"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-frontend-css"
+      href="./css/css-914c18102fd64a226cd9540a8d76e00d.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-post-38-css"
+      href="./css/css-c8d7c67615a5c930cf387a3991658034.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="./css/css-d4614d72f3c2c793b6cdde06b4c5d619.css"
+      media="all"
+    />
+    <style id="classic-theme-styles-inline-css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css">
+      body {
+        --wp--preset--color--black: #000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #fff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          #9b51e0 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          #7adcb4 0%,
+          #00d082 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          #cf2e2e 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          #eee 0%,
+          #a9b8c3 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          #4aeadc 0%,
+          #9778d1 20%,
+          #cf2aba 40%,
+          #ee2c82 60%,
+          #fb6962 80%,
+          #fef84c 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          #ffceec 0%,
+          #9896f0 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          #fecda5 0%,
+          #fe2d2d 50%,
+          #6b003e 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          #ffcb70 0%,
+          #c751c0 50%,
+          #4158d0 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          #fff5cb 0%,
+          #b6e3d4 50%,
+          #33a7b5 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          #caf880 0%,
+          #71ce7e 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          #020381 0%,
+          #2874fc 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flow > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-flow > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-flow > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignleft {
+        float: left;
+        margin-inline-start: 0;
+        margin-inline-end: 2em;
+      }
+      body .is-layout-constrained > .alignright {
+        float: right;
+        margin-inline-start: 2em;
+        margin-inline-end: 0;
+      }
+      body .is-layout-constrained > .aligncenter {
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body
+        .is-layout-constrained
+        > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: var(--wp--style--global--content-size);
+        margin-left: auto !important;
+        margin-right: auto !important;
+      }
+      body .is-layout-constrained > .alignwide {
+        max-width: var(--wp--style--global--wide-size);
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      body .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      body .is-layout-flex > * {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      body .is-layout-grid > * {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      .wp-block-navigation a:where(:not(.wp-element-button)) {
+        color: inherit;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      .wp-block-pullquote {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="hello-elementor-css"
+      href="./css/css-16e0c14e0a07d5a29b61f9accdd85f09.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="hello-elementor-theme-style-css"
+      href="./css/css-e05990f6b90507592691327afaad5aa3.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-post-5-css"
+      href="./css/css-1bc0b7bee0ae999533f4938f4c9712aa.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-icons-ekiticons-css"
+      href="./css/css-d4323105efe808f583734b95ab3b0715.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-icons-css"
+      href="./css/css-a7a5e8855dc565dcc24682bc8ace363a.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-pro-css"
+      href="./css/css-6844f6a6286bfd65e1c29efbd560e2e1.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-global-css"
+      href="./css/css-6008283ec770fbb57c504d91aceffd90.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-post-271-css"
+      href="./css/css-584a275d57519460efb6adac0472b40e.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="ekit-widget-styles-css"
+      href="./css/css-da74804454fe30d6bba244c45325c236.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="ekit-responsive-css"
+      href="./css/css-87799c15b03ef5b214c0f01ef62fdda5.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="google-fonts-1-css"
+      href="./css/css-d0686e713ba5e1360986a68023210874.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-icons-shared-0-css"
+      href="./css/css-8fe3ffa22eebe11d0409b8ef8706eec0.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-icons-fa-solid-css"
+      href="./css/css-7d0d43d4a5123e397cb6333fa644ad9a.css"
+      media="all"
+    />
+    <link
+      data-optimized="1"
+      rel="stylesheet"
+      id="elementor-icons-fa-brands-css"
+      href="./css/css-ada4e898a6026143c4a43a8ed0e61ac1.css"
+      media="all"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script>
+      var rcewpp = {
+        ajax_url: "https://link.gocce.com.tr/wp-admin/admin-ajax.php",
+        nonce: "3ca15c6ec5",
+        home_url: "https://link.gocce.com.tr/",
+        settings_icon:
+          "https://link.gocce.com.tr/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings.png",
+        settings_hover_icon:
+          "https://link.gocce.com.tr/wp-content/plugins/export-wp-page-to-static-html/admin/images/settings_hover.png",
+      };
+    </script>
+    <script src="./js/jquery-jquery.min.js" id="jquery-core-js"></script>
+    <script
+      data-optimized="1"
+      src="./js/js-dc085d7888c310aea329b5081707ce37.js"
+      id="jquery-migrate-js"
+    ></script>
+    <link rel="https://api.w.org/" href="https://link.gocce.com.tr/wp-json/" />
+    <link
+      rel="alternate"
+      type="application/json"
+      href="https://link.gocce.com.tr/wp-json/wp/v2/pages/271"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="https://link.gocce.com.tr/xmlrpc.php?rsd"
+    />
+    <meta name="generator" content="WordPress 6.3.2" />
+    <link rel="canonical" href="https://link.gocce.com.tr/sulo/" />
+    <link rel="shortlink" href="https://link.gocce.com.tr/?p=271" />
+    <link
+      rel="alternate"
+      type="application/json+oembed"
+      href="https://link.gocce.com.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flink.gocce.com.tr%2Fsulo%2F"
+    />
+    <link
+      rel="alternate"
+      type="text/xml+oembed"
+      href="https://link.gocce.com.tr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flink.gocce.com.tr%2Fsulo%2F&#038;format=xml"
+    />
+    <link
+      rel="icon"
+      href="./images/cropped-arkasibeyazlilogo-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="./images/cropped-arkasibeyazlilogo-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./images/cropped-arkasibeyazlilogo-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://link.gocce.com.tr/wp-content/uploads/2023/10/cropped-arkasibeyazlilogo-270x270.png"
+    />
+  </head>
+  <body
+    data-rsssl="1"
+    class="page-template-default page page-id-271 wp-custom-logo elementor-default elementor-kit-5 elementor-page elementor-page-271"
+  >
+    <div
+      class="ekit-template-content-markup ekit-template-content-header ekit-template-content-theme-support"
+    ></div>
+    <main
+      id="content"
+      class="site-main post-271 page type-page status-publish hentry"
+      role="main"
+    >
+      <div class="page-content">
+        <div
+          data-elementor-type="wp-page"
+          data-elementor-id="271"
+          class="elementor elementor-271"
+        >
+          <section
+            class="elementor-section elementor-top-section elementor-element elementor-element-6992aefc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+            data-id="6992aefc"
+            data-element_type="section"
+            data-settings='{"background_background":"classic"}'
+          >
+            <div class="elementor-background-overlay"></div>
+            <div class="elementor-container elementor-column-gap-default">
+              <div
+                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-7e95f1f7 elementor-hidden-mobile"
+                data-id="7e95f1f7"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap"></div>
+              </div>
+              <div
+                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6f4342c2"
+                data-id="6f4342c2"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap elementor-element-populated">
+                  <section
+                    class="elementor-section elementor-inner-section elementor-element elementor-element-d1c2072 elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
+                    data-id="d1c2072"
+                    data-element_type="section"
+                  >
+                    <div class="elementor-container elementor-column-gap-no">
+                      <div
+                        class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-606bd04"
+                        data-id="606bd04"
+                        data-element_type="column"
+                      >
+                        <div
+                          class="elementor-widget-wrap elementor-element-populated"
+                        >
+                          <div
+                            class="elementor-element elementor-element-1cdc83b7 elementor-widget elementor-widget-image"
+                            data-id="1cdc83b7"
+                            data-element_type="widget"
+                            data-widget_type="image.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <style>
+                                /*! elementor - v3.9.2 - 21-12-2022 */
+                                .elementor-widget-image {
+                                  text-align: center;
+                                }
+                                .elementor-widget-image a {
+                                  display: inline-block;
+                                }
+                                .elementor-widget-image a img[src$=".svg"] {
+                                  width: 48px;
+                                }
+                                .elementor-widget-image img {
+                                  vertical-align: middle;
+                                  display: inline-block;
+                                }</style
+                              ><a href="https://gocce.com.tr/">
+                                <img
+                                  data-lazyloaded="1"
+                                  src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs="
+                                  decoding="async"
+                                  width="1000"
+                                  height="1000"
+                                  data-src="https://link.gocce.com.tr/wp-content/uploads/2023/11/pp.png"
+                                  class="attachment-full size-full wp-image-275"
+                                  alt=""
+                                  data-srcset="https://link.gocce.com.tr/wp-content/uploads/2023/11/pp.png 1000w, https://link.gocce.com.tr/wp-content/uploads/2023/11/pp-300x300.png 300w, https://link.gocce.com.tr/wp-content/uploads/2023/11/pp-150x150.png 150w, https://link.gocce.com.tr/wp-content/uploads/2023/11/pp-768x768.png 768w"
+                                  data-sizes="(max-width: 1000px) 100vw, 1000px"
+                                /><noscript
+                                  ><img
+                                    decoding="async"
+                                    width="1000"
+                                    height="1000"
+                                    src="./images/2023-11-pp.png"
+                                    class="attachment-full size-full wp-image-275"
+                                    alt=""
+                                    srcset="
+                                      ./images/2023-11-pp.png         1000w,
+                                      ./images/2023-11-pp-300x300.png  300w,
+                                      ./images/2023-11-pp-150x150.png  150w,
+                                      ./images/2023-11-pp-768x768.png  768w
+                                    "
+                                    sizes="(max-width: 1000px) 100vw, 1000px"
+                                /></noscript>
+                              </a>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-7437a985 elementor-widget elementor-widget-heading"
+                            data-id="7437a985"
+                            data-element_type="widget"
+                            data-widget_type="heading.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <style>
+                                /*! elementor - v3.9.2 - 21-12-2022 */
+                                .elementor-heading-title {
+                                  padding: 0;
+                                  margin: 0;
+                                  line-height: 1;
+                                }
+                                .elementor-widget-heading
+                                  .elementor-heading-title[class*="elementor-size-"]
+                                  > a {
+                                  color: inherit;
+                                  font-size: inherit;
+                                  line-height: inherit;
+                                }
+                                .elementor-widget-heading
+                                  .elementor-heading-title.elementor-size-small {
+                                  font-size: 15px;
+                                }
+                                .elementor-widget-heading
+                                  .elementor-heading-title.elementor-size-medium {
+                                  font-size: 19px;
+                                }
+                                .elementor-widget-heading
+                                  .elementor-heading-title.elementor-size-large {
+                                  font-size: 29px;
+                                }
+                                .elementor-widget-heading
+                                  .elementor-heading-title.elementor-size-xl {
+                                  font-size: 39px;
+                                }
+                                .elementor-widget-heading
+                                  .elementor-heading-title.elementor-size-xxl {
+                                  font-size: 59px;
+                                }
+                              </style>
+                              <h2
+                                class="elementor-heading-title elementor-size-default"
+                              >
+                                @system.conf
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <section
+                    class="elementor-section elementor-inner-section elementor-element elementor-element-c8a52bb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                    data-id="c8a52bb"
+                    data-element_type="section"
+                  >
+                    <div
+                      class="elementor-container elementor-column-gap-default"
+                    >
+                      <div
+                        class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-944f0fe"
+                        data-id="944f0fe"
+                        data-element_type="column"
+                      >
+                        <div
+                          class="elementor-widget-wrap elementor-element-populated"
+                        >
+                          <div
+                            class="elementor-element elementor-element-ef97e7f elementor-align-justify elementor-widget__width-inherit elementor-widget elementor-widget-button"
+                            data-id="ef97e7f"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://suleymantalha.dev/"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="icon icon-valentines-heart"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >suleymantalha.dev</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-429e9023 elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="429e9023"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://starkbilisim.com/"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fas fa-globe"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >starkbilisim.com</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-7bdac27 elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="7bdac27"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://gocce.com.tr/"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fas fa-info"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >gocce.com.tr</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-64e25e8d elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="64e25e8d"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="mailto:suleyman@gocce.com.tr"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fas fa-mail-bulk"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >Email</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-5bb16408 elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="5bb16408"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://www.linkedin.com/in/system-conf/"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fab fa-linkedin-in"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >LinkedIn</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-490d60f elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="490d60f"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://github.com/system-conf"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fab fa-github"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >Github</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-8d1406a elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="8d1406a"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://twitter.com/system_conf"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fab fa-twitter"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >Twitter</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="elementor-element elementor-element-4a8a3143 elementor-align-justify elementor-widget elementor-widget-button"
+                            data-id="4a8a3143"
+                            data-element_type="widget"
+                            data-widget_type="button.default"
+                          >
+                            <div class="elementor-widget-container">
+                              <div class="elementor-button-wrapper">
+                                <a
+                                  href="https://www.linkedin.com/in/system-conf/"
+                                  class="elementor-button-link elementor-button elementor-size-md"
+                                  role="button"
+                                >
+                                  <span
+                                    class="elementor-button-content-wrapper"
+                                  >
+                                    <span
+                                      class="elementor-button-icon elementor-align-icon-left"
+                                    >
+                                      <i
+                                        aria-hidden="true"
+                                        class="fab fa-instagram"
+                                      ></i>
+                                    </span>
+                                    <span class="elementor-button-text"
+                                      >INSTAGRAM</span
+                                    >
+                                  </span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <div
+                    class="elementor-element elementor-element-34120956 elementor-widget elementor-widget-spacer"
+                    data-id="34120956"
+                    data-element_type="widget"
+                    data-widget_type="spacer.default"
+                  >
+                    <div class="elementor-widget-container">
+                      <style>
+                        /*! elementor - v3.9.2 - 21-12-2022 */
+                        .elementor-column .elementor-spacer-inner {
+                          height: var(--spacer-size);
+                        }
+                        .e-con {
+                          --container-widget-width: 100%;
+                        }
+                        .e-con-inner > .elementor-widget-spacer,
+                        .e-con > .elementor-widget-spacer {
+                          width: var(
+                            --container-widget-width,
+                            var(--spacer-size)
+                          );
+                          --align-self: var(
+                            --container-widget-align-self,
+                            initial
+                          );
+                          --flex-shrink: 0;
+                        }
+                        .e-con-inner
+                          > .elementor-widget-spacer
+                          > .elementor-widget-container,
+                        .e-con-inner
+                          > .elementor-widget-spacer
+                          > .elementor-widget-container
+                          > .elementor-spacer,
+                        .e-con
+                          > .elementor-widget-spacer
+                          > .elementor-widget-container,
+                        .e-con
+                          > .elementor-widget-spacer
+                          > .elementor-widget-container
+                          > .elementor-spacer {
+                          height: 100%;
+                        }
+                        .e-con-inner
+                          > .elementor-widget-spacer
+                          > .elementor-widget-container
+                          > .elementor-spacer
+                          > .elementor-spacer-inner,
+                        .e-con
+                          > .elementor-widget-spacer
+                          > .elementor-widget-container
+                          > .elementor-spacer
+                          > .elementor-spacer-inner {
+                          height: var(
+                            --container-widget-height,
+                            var(--spacer-size)
+                          );
+                        }
+                      </style>
+                      <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-26ff5ad9"
+                data-id="26ff5ad9"
+                data-element_type="column"
+              >
+                <div class="elementor-widget-wrap"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="post-tags"></div>
+      </div>
+      <section id="comments" class="comments-area"></section>
+    </main>
+    <div
+      class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support"
+    ></div>
+    <script
+      data-optimized="1"
+      src="./js/js-29ed09578d82785ff351c4aa6e1480cf.js"
+      id="hello-theme-frontend-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-e9241a8c1fe2b120a99aa67b1796f37e.js"
+      id="elementskit-framework-js-frontend-js"
+    ></script>
+    <script data-optimized="1" id="elementskit-framework-js-frontend-js-after">
+      var elementskit = {
+        resturl: "https://link.gocce.com.tr/wp-json/elementskit/v1/",
+      };
+    </script>
+    <script
+      data-optimized="1"
+      src="./js/js-d36174400450b1de41b88786ffa505bd.js"
+      id="ekit-widget-scripts-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-fc68a80f5083bd7773f26903ec1c73e2.js"
+      id="elementor-pro-webpack-runtime-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-f39b79d11527bbdfcb255aa65f02193c.js"
+      id="elementor-webpack-runtime-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-63574f27ab12a97d7176878b25949ede.js"
+      id="elementor-frontend-modules-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-12b10d2c5ee5cee6d9c9ad154bd8269f.js"
+      id="wp-polyfill-inert-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-b013f00782df510fe3233a223968afc9.js"
+      id="regenerator-runtime-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-5d38dec618a7e1d53d708741569f6d49.js"
+      id="wp-polyfill-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-2c9e6c38d6c9e11ca271adab8d960c04.js"
+      id="wp-hooks-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-b6c3ad051568338abf9f8b41c7469c3d.js"
+      id="wp-i18n-js"
+    ></script>
+    <script data-optimized="1" id="wp-i18n-js-after">
+      wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
+    </script>
+    <script data-optimized="1" id="elementor-pro-frontend-js-before">
+      var ElementorProFrontendConfig = {
+        ajaxurl: "https:\/\/link.gocce.com.tr\/wp-admin\/admin-ajax.php",
+        nonce: "43d1e3f585",
+        urls: {
+          assets:
+            "https:\/\/link.gocce.com.tr\/wp-content\/plugins\/elementor-pro\/assets\/",
+          rest: "https:\/\/link.gocce.com.tr\/wp-json\/",
+        },
+        shareButtonsNetworks: {
+          facebook: { title: "Facebook", has_counter: !0 },
+          twitter: { title: "Twitter" },
+          linkedin: { title: "LinkedIn", has_counter: !0 },
+          pinterest: { title: "Pinterest", has_counter: !0 },
+          reddit: { title: "Reddit", has_counter: !0 },
+          vk: { title: "VK", has_counter: !0 },
+          odnoklassniki: { title: "OK", has_counter: !0 },
+          tumblr: { title: "Tumblr" },
+          digg: { title: "Digg" },
+          skype: { title: "Skype" },
+          stumbleupon: { title: "StumbleUpon", has_counter: !0 },
+          mix: { title: "Mix" },
+          telegram: { title: "Telegram" },
+          pocket: { title: "Pocket", has_counter: !0 },
+          xing: { title: "XING", has_counter: !0 },
+          whatsapp: { title: "WhatsApp" },
+          email: { title: "Email" },
+          print: { title: "Print" },
+        },
+        facebook_sdk: { lang: "tr_TR", app_id: "" },
+        lottie: {
+          defaultAnimationUrl:
+            "https:\/\/link.gocce.com.tr\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json",
+        },
+      };
+    </script>
+    <script
+      data-optimized="1"
+      src="./js/js-7820c8f30f407065379fc0a389a0bfd2.js"
+      id="elementor-pro-frontend-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-cc1a55c47699bfe1c9e65bdda6e618a5.js"
+      id="elementor-waypoints-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-b4e76f3dc5974a4ff83630b9c2933c81.js"
+      id="jquery-ui-core-js"
+    ></script>
+    <script data-optimized="1" id="elementor-frontend-js-before">
+      var elementorFrontendConfig = {
+        environmentMode: { edit: !1, wpPreview: !1, isScriptDebug: !1 },
+        i18n: {
+          shareOnFacebook: "Facebook\u2019ta payla\u015f",
+          shareOnTwitter: "Twitter\u2019da payla\u015f\u0131n",
+          pinIt: "Sabitle",
+          download: "\u0130ndir",
+          downloadImage: "G\u00f6rseli indir",
+          fullscreen: "Tam Ekran",
+          zoom: "Yak\u0131nla\u015ft\u0131r",
+          share: "Payla\u015f",
+          playVideo: "Videoyu oynat",
+          previous: "\u00d6nceki",
+          next: "Sonraki",
+          close: "Kapat",
+        },
+        is_rtl: !1,
+        breakpoints: { xs: 0, sm: 480, md: 768, lg: 1025, xl: 1440, xxl: 1600 },
+        responsive: {
+          breakpoints: {
+            mobile: {
+              label: "Mobil",
+              value: 767,
+              default_value: 767,
+              direction: "max",
+              is_enabled: !0,
+            },
+            mobile_extra: {
+              label: "Mobile Extra",
+              value: 880,
+              default_value: 880,
+              direction: "max",
+              is_enabled: !1,
+            },
+            tablet: {
+              label: "Tablet",
+              value: 1024,
+              default_value: 1024,
+              direction: "max",
+              is_enabled: !0,
+            },
+            tablet_extra: {
+              label: "Tablet Extra",
+              value: 1200,
+              default_value: 1200,
+              direction: "max",
+              is_enabled: !1,
+            },
+            laptop: {
+              label: "Diz\u00fcst\u00fc bilgisayar",
+              value: 1366,
+              default_value: 1366,
+              direction: "max",
+              is_enabled: !1,
+            },
+            widescreen: {
+              label: "Geni\u015f ekran",
+              value: 2400,
+              default_value: 2400,
+              direction: "min",
+              is_enabled: !1,
+            },
+          },
+        },
+        version: "3.9.2",
+        is_static: !1,
+        experimentalFeatures: {
+          e_dom_optimization: !0,
+          e_optimized_assets_loading: !0,
+          e_optimized_css_loading: !0,
+          a11y_improvements: !0,
+          additional_custom_breakpoints: !0,
+          e_import_export: !0,
+          e_hidden_wordpress_widgets: !0,
+          theme_builder_v2: !0,
+          "hello-theme-header-footer": !0,
+          "landing-pages": !0,
+          "elements-color-picker": !0,
+          "favorite-widgets": !0,
+          "admin-top-bar": !0,
+          "kit-elements-defaults": !0,
+          "page-transitions": !0,
+          notes: !0,
+          loop: !0,
+          "form-submissions": !0,
+          e_scroll_snap: !0,
+        },
+        urls: {
+          assets:
+            "https:\/\/link.gocce.com.tr\/wp-content\/plugins\/elementor\/assets\/",
+        },
+        settings: { page: [], editorPreferences: [] },
+        kit: {
+          body_background_background: "classic",
+          active_breakpoints: ["viewport_mobile", "viewport_tablet"],
+          global_image_lightbox: "yes",
+          lightbox_enable_counter: "yes",
+          lightbox_enable_fullscreen: "yes",
+          lightbox_enable_zoom: "yes",
+          lightbox_enable_share: "yes",
+          lightbox_title_src: "title",
+          lightbox_description_src: "description",
+          hello_header_logo_type: "logo",
+          hello_footer_logo_type: "logo",
+        },
+        post: {
+          id: 271,
+          title:
+            "s%C3%BClo%20%E2%80%93%20Gocce%20Reklam%20ve%20Yaz%C4%B1l%C4%B1m%20Ajans%C4%B1",
+          excerpt: "",
+          featuredImage: !1,
+        },
+      };
+    </script>
+    <script
+      data-optimized="1"
+      src="./js/js-69c87307cc98f5283f9d4b193425542f.js"
+      id="elementor-frontend-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-ab90df4ad2a3674d2e315ecc738ed2be.js"
+      id="pro-elements-handlers-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-6bef1de7458fa4de9c029e018366e497.js"
+      id="animate-circle-js"
+    ></script>
+    <script data-optimized="1" id="elementskit-elementor-js-extra">
+      var ekit_config = {
+        ajaxurl: "https:\/\/link.gocce.com.tr\/wp-admin\/admin-ajax.php",
+        nonce: "4ad6b2f40f",
+      };
+    </script>
+    <script
+      data-optimized="1"
+      src="./js/js-ee0ea38c7e4ec5425ad9945fade8f0f5.js"
+      id="elementskit-elementor-js"
+    ></script>
+    <script
+      data-optimized="1"
+      src="./js/js-4ae897a6a4345e990cd9402a4d3af26b.js"
+      id="swiper-js"
+    ></script>
+    <script data-no-optimize="1">
+      !(function (t, e) {
+        "object" == typeof exports && "undefined" != typeof module
+          ? (module.exports = e())
+          : "function" == typeof define && define.amd
+          ? define(e)
+          : ((t =
+              "undefined" != typeof globalThis
+                ? globalThis
+                : t || self).LazyLoad = e());
+      })(this, function () {
+        "use strict";
+        function e() {
+          return (e =
+            Object.assign ||
+            function (t) {
+              for (var e = 1; e < arguments.length; e++) {
+                var n,
+                  a = arguments[e];
+                for (n in a)
+                  Object.prototype.hasOwnProperty.call(a, n) && (t[n] = a[n]);
+              }
+              return t;
+            }).apply(this, arguments);
+        }
+        function i(t) {
+          return e({}, it, t);
+        }
+        function o(t, e) {
+          var n,
+            a = "LazyLoad::Initialized",
+            i = new t(e);
+          try {
+            n = new CustomEvent(a, { detail: { instance: i } });
+          } catch (t) {
+            (n = document.createEvent("CustomEvent")).initCustomEvent(
+              a,
+              !1,
+              !1,
+              { instance: i }
+            );
+          }
+          window.dispatchEvent(n);
+        }
+        function l(t, e) {
+          return t.getAttribute(gt + e);
+        }
+        function c(t) {
+          return l(t, bt);
+        }
+        function s(t, e) {
+          return (function (t, e, n) {
+            e = gt + e;
+            null !== n ? t.setAttribute(e, n) : t.removeAttribute(e);
+          })(t, bt, e);
+        }
+        function r(t) {
+          return s(t, null), 0;
+        }
+        function u(t) {
+          return null === c(t);
+        }
+        function d(t) {
+          return c(t) === vt;
+        }
+        function f(t, e, n, a) {
+          t && (void 0 === a ? (void 0 === n ? t(e) : t(e, n)) : t(e, n, a));
+        }
+        function _(t, e) {
+          nt
+            ? t.classList.add(e)
+            : (t.className += (t.className ? " " : "") + e);
+        }
+        function v(t, e) {
+          nt
+            ? t.classList.remove(e)
+            : (t.className = t.className
+                .replace(new RegExp("(^|\\s+)" + e + "(\\s+|$)"), " ")
+                .replace(/^\s+/, "")
+                .replace(/\s+$/, ""));
+        }
+        function g(t) {
+          return t.llTempImage;
+        }
+        function b(t, e) {
+          !e || ((e = e._observer) && e.unobserve(t));
+        }
+        function p(t, e) {
+          t && (t.loadingCount += e);
+        }
+        function h(t, e) {
+          t && (t.toLoadCount = e);
+        }
+        function n(t) {
+          for (var e, n = [], a = 0; (e = t.children[a]); a += 1)
+            "SOURCE" === e.tagName && n.push(e);
+          return n;
+        }
+        function m(t, e) {
+          (t = t.parentNode) && "PICTURE" === t.tagName && n(t).forEach(e);
+        }
+        function a(t, e) {
+          n(t).forEach(e);
+        }
+        function E(t) {
+          return !!t[st];
+        }
+        function I(t) {
+          return t[st];
+        }
+        function y(t) {
+          return delete t[st];
+        }
+        function A(e, t) {
+          var n;
+          E(e) ||
+            ((n = {}),
+            t.forEach(function (t) {
+              n[t] = e.getAttribute(t);
+            }),
+            (e[st] = n));
+        }
+        function k(a, t) {
+          var i;
+          E(a) &&
+            ((i = I(a)),
+            t.forEach(function (t) {
+              var e, n;
+              (e = a),
+                (t = i[(n = t)]) ? e.setAttribute(n, t) : e.removeAttribute(n);
+            }));
+        }
+        function L(t, e, n) {
+          _(t, e.class_loading),
+            s(t, ut),
+            n && (p(n, 1), f(e.callback_loading, t, n));
+        }
+        function w(t, e, n) {
+          n && t.setAttribute(e, n);
+        }
+        function x(t, e) {
+          w(t, ct, l(t, e.data_sizes)),
+            w(t, rt, l(t, e.data_srcset)),
+            w(t, ot, l(t, e.data_src));
+        }
+        function O(t, e, n) {
+          var a = l(t, e.data_bg_multi),
+            i = l(t, e.data_bg_multi_hidpi);
+          (a = at && i ? i : a) &&
+            ((t.style.backgroundImage = a),
+            (n = n),
+            _((t = t), (e = e).class_applied),
+            s(t, ft),
+            n &&
+              (e.unobserve_completed && b(t, e), f(e.callback_applied, t, n)));
+        }
+        function N(t, e) {
+          !e ||
+            0 < e.loadingCount ||
+            0 < e.toLoadCount ||
+            f(t.callback_finish, e);
+        }
+        function C(t, e, n) {
+          t.addEventListener(e, n), (t.llEvLisnrs[e] = n);
+        }
+        function M(t) {
+          return !!t.llEvLisnrs;
+        }
+        function z(t) {
+          if (M(t)) {
+            var e,
+              n,
+              a = t.llEvLisnrs;
+            for (e in a) {
+              var i = a[e];
+              (n = e), (i = i), t.removeEventListener(n, i);
+            }
+            delete t.llEvLisnrs;
+          }
+        }
+        function R(t, e, n) {
+          var a;
+          delete t.llTempImage,
+            p(n, -1),
+            (a = n) && --a.toLoadCount,
+            v(t, e.class_loading),
+            e.unobserve_completed && b(t, n);
+        }
+        function T(o, r, c) {
+          var l = g(o) || o;
+          M(l) ||
+            (function (t, e, n) {
+              M(t) || (t.llEvLisnrs = {});
+              var a = "VIDEO" === t.tagName ? "loadeddata" : "load";
+              C(t, a, e), C(t, "error", n);
+            })(
+              l,
+              function (t) {
+                var e, n, a, i;
+                (n = r),
+                  (a = c),
+                  (i = d((e = o))),
+                  R(e, n, a),
+                  _(e, n.class_loaded),
+                  s(e, dt),
+                  f(n.callback_loaded, e, a),
+                  i || N(n, a),
+                  z(l);
+              },
+              function (t) {
+                var e, n, a, i;
+                (n = r),
+                  (a = c),
+                  (i = d((e = o))),
+                  R(e, n, a),
+                  _(e, n.class_error),
+                  s(e, _t),
+                  f(n.callback_error, e, a),
+                  i || N(n, a),
+                  z(l);
+              }
+            );
+        }
+        function G(t, e, n) {
+          var a, i, o, r, c;
+          (t.llTempImage = document.createElement("IMG")),
+            T(t, e, n),
+            E((c = t)) ||
+              (c[st] = { backgroundImage: c.style.backgroundImage }),
+            (o = n),
+            (r = l((a = t), (i = e).data_bg)),
+            (c = l(a, i.data_bg_hidpi)),
+            (r = at && c ? c : r) &&
+              ((a.style.backgroundImage = 'url("'.concat(r, '")')),
+              g(a).setAttribute(ot, r),
+              L(a, i, o)),
+            O(t, e, n);
+        }
+        function D(t, e, n) {
+          var a;
+          T(t, e, n),
+            (a = e),
+            (e = n),
+            (t = It[(n = t).tagName]) && (t(n, a), L(n, a, e));
+        }
+        function V(t, e, n) {
+          var a;
+          (a = t), (-1 < yt.indexOf(a.tagName) ? D : G)(t, e, n);
+        }
+        function F(t, e, n) {
+          var a;
+          t.setAttribute("loading", "lazy"),
+            T(t, e, n),
+            (a = e),
+            (e = It[(n = t).tagName]) && e(n, a),
+            s(t, vt);
+        }
+        function j(t) {
+          t.removeAttribute(ot), t.removeAttribute(rt), t.removeAttribute(ct);
+        }
+        function P(t) {
+          m(t, function (t) {
+            k(t, Et);
+          }),
+            k(t, Et);
+        }
+        function S(t) {
+          var e;
+          (e = At[t.tagName])
+            ? e(t)
+            : E((e = t)) &&
+              ((t = I(e)), (e.style.backgroundImage = t.backgroundImage));
+        }
+        function U(t, e) {
+          var n;
+          S(t),
+            (n = e),
+            u((e = t)) ||
+              d(e) ||
+              (v(e, n.class_entered),
+              v(e, n.class_exited),
+              v(e, n.class_applied),
+              v(e, n.class_loading),
+              v(e, n.class_loaded),
+              v(e, n.class_error)),
+            r(t),
+            y(t);
+        }
+        function $(t, e, n, a) {
+          var i;
+          n.cancel_on_exit &&
+            (c(t) !== ut ||
+              ("IMG" === t.tagName &&
+                (z(t),
+                m((i = t), function (t) {
+                  j(t);
+                }),
+                j(i),
+                P(t),
+                v(t, n.class_loading),
+                p(a, -1),
+                r(t),
+                f(n.callback_cancel, t, e, a))));
+        }
+        function q(t, e, n, a) {
+          var i,
+            o,
+            r = ((o = t), 0 <= pt.indexOf(c(o)));
+          s(t, "entered"),
+            _(t, n.class_entered),
+            v(t, n.class_exited),
+            (i = t),
+            (o = a),
+            n.unobserve_entered && b(i, o),
+            f(n.callback_enter, t, e, a),
+            r || V(t, n, a);
+        }
+        function H(t) {
+          return t.use_native && "loading" in HTMLImageElement.prototype;
+        }
+        function B(t, i, o) {
+          t.forEach(function (t) {
+            return (a = t).isIntersecting || 0 < a.intersectionRatio
+              ? q(t.target, t, i, o)
+              : ((e = t.target),
+                (n = t),
+                (a = i),
+                (t = o),
+                void (
+                  u(e) ||
+                  (_(e, a.class_exited),
+                  $(e, n, a, t),
+                  f(a.callback_exit, e, n, t))
+                ));
+            var e, n, a;
+          });
+        }
+        function J(e, n) {
+          var t;
+          et &&
+            !H(e) &&
+            (n._observer = new IntersectionObserver(
+              function (t) {
+                B(t, e, n);
+              },
+              {
+                root: (t = e).container === document ? null : t.container,
+                rootMargin: t.thresholds || t.threshold + "px",
+              }
+            ));
+        }
+        function K(t) {
+          return Array.prototype.slice.call(t);
+        }
+        function Q(t) {
+          return t.container.querySelectorAll(t.elements_selector);
+        }
+        function W(t) {
+          return c(t) === _t;
+        }
+        function X(t, e) {
+          return (e = t || Q(e)), K(e).filter(u);
+        }
+        function Y(e, t) {
+          var n;
+          ((n = Q(e)), K(n).filter(W)).forEach(function (t) {
+            v(t, e.class_error), r(t);
+          }),
+            t.update();
+        }
+        function t(t, e) {
+          var n,
+            a,
+            t = i(t);
+          (this._settings = t),
+            (this.loadingCount = 0),
+            J(t, this),
+            (n = t),
+            (a = this),
+            Z &&
+              window.addEventListener("online", function () {
+                Y(n, a);
+              }),
+            this.update(e);
+        }
+        var Z = "undefined" != typeof window,
+          tt =
+            (Z && !("onscroll" in window)) ||
+            ("undefined" != typeof navigator &&
+              /(gle|ing|ro)bot|crawl|spider/i.test(navigator.userAgent)),
+          et = Z && "IntersectionObserver" in window,
+          nt = Z && "classList" in document.createElement("p"),
+          at = Z && 1 < window.devicePixelRatio,
+          it = {
+            elements_selector: ".lazy",
+            container: tt || Z ? document : null,
+            threshold: 300,
+            thresholds: null,
+            data_src: "src",
+            data_srcset: "srcset",
+            data_sizes: "sizes",
+            data_bg: "bg",
+            data_bg_hidpi: "bg-hidpi",
+            data_bg_multi: "bg-multi",
+            data_bg_multi_hidpi: "bg-multi-hidpi",
+            data_poster: "poster",
+            class_applied: "applied",
+            class_loading: "litespeed-loading",
+            class_loaded: "litespeed-loaded",
+            class_error: "error",
+            class_entered: "entered",
+            class_exited: "exited",
+            unobserve_completed: !0,
+            unobserve_entered: !1,
+            cancel_on_exit: !0,
+            callback_enter: null,
+            callback_exit: null,
+            callback_applied: null,
+            callback_loading: null,
+            callback_loaded: null,
+            callback_error: null,
+            callback_finish: null,
+            callback_cancel: null,
+            use_native: !1,
+          },
+          ot = "src",
+          rt = "srcset",
+          ct = "sizes",
+          lt = "poster",
+          st = "llOriginalAttrs",
+          ut = "loading",
+          dt = "loaded",
+          ft = "applied",
+          _t = "error",
+          vt = "native",
+          gt = "data-",
+          bt = "ll-status",
+          pt = [ut, dt, ft, _t],
+          ht = [ot],
+          mt = [ot, lt],
+          Et = [ot, rt, ct],
+          It = {
+            IMG: function (t, e) {
+              m(t, function (t) {
+                A(t, Et), x(t, e);
+              }),
+                A(t, Et),
+                x(t, e);
+            },
+            IFRAME: function (t, e) {
+              A(t, ht), w(t, ot, l(t, e.data_src));
+            },
+            VIDEO: function (t, e) {
+              a(t, function (t) {
+                A(t, ht), w(t, ot, l(t, e.data_src));
+              }),
+                A(t, mt),
+                w(t, lt, l(t, e.data_poster)),
+                w(t, ot, l(t, e.data_src)),
+                t.load();
+            },
+          },
+          yt = ["IMG", "IFRAME", "VIDEO"],
+          At = {
+            IMG: P,
+            IFRAME: function (t) {
+              k(t, ht);
+            },
+            VIDEO: function (t) {
+              a(t, function (t) {
+                k(t, ht);
+              }),
+                k(t, mt),
+                t.load();
+            },
+          },
+          kt = ["IMG", "IFRAME", "VIDEO"];
+        return (
+          (t.prototype = {
+            update: function (t) {
+              var e,
+                n,
+                a,
+                i = this._settings,
+                o = X(t, i);
+              {
+                if ((h(this, o.length), !tt && et))
+                  return H(i)
+                    ? ((e = i),
+                      (n = this),
+                      o.forEach(function (t) {
+                        -1 !== kt.indexOf(t.tagName) && F(t, e, n);
+                      }),
+                      void h(n, 0))
+                    : ((t = this._observer),
+                      (i = o),
+                      t.disconnect(),
+                      (a = t),
+                      void i.forEach(function (t) {
+                        a.observe(t);
+                      }));
+                this.loadAll(o);
+              }
+            },
+            destroy: function () {
+              this._observer && this._observer.disconnect(),
+                Q(this._settings).forEach(function (t) {
+                  y(t);
+                }),
+                delete this._observer,
+                delete this._settings,
+                delete this.loadingCount,
+                delete this.toLoadCount;
+            },
+            loadAll: function (t) {
+              var e = this,
+                n = this._settings;
+              X(t, n).forEach(function (t) {
+                b(t, e), V(t, n, e);
+              });
+            },
+            restoreAll: function () {
+              var e = this._settings;
+              Q(e).forEach(function (t) {
+                U(t, e);
+              });
+            },
+          }),
+          (t.load = function (t, e) {
+            e = i(e);
+            V(t, e);
+          }),
+          (t.resetStatus = function (t) {
+            r(t);
+          }),
+          Z &&
+            (function (t, e) {
+              if (e)
+                if (e.length) for (var n, a = 0; (n = e[a]); a += 1) o(t, n);
+                else o(t, e);
+            })(t, window.lazyLoadOptions),
+          t
+        );
+      });
+      !(function (e, t) {
+        "use strict";
+        function a() {
+          t.body.classList.add("litespeed_lazyloaded");
+        }
+        function n() {
+          console.log("[LiteSpeed] Start Lazy Load Images"),
+            (d = new LazyLoad({
+              elements_selector: "[data-lazyloaded]",
+              callback_finish: a,
+            })),
+            (o = function () {
+              d.update();
+            }),
+            e.MutationObserver &&
+              new MutationObserver(o).observe(t.documentElement, {
+                childList: !0,
+                subtree: !0,
+                attributes: !0,
+              });
+        }
+        var d, o;
+        e.addEventListener
+          ? e.addEventListener("load", n, !1)
+          : e.attachEvent("onload", n);
+      })(window, document);
+    </script>
+  </body>
+</html>
+<!-- Page optimized by LiteSpeed Cache @2023-11-06 11:43:22 -->
+<!-- Page cached by LiteSpeed Cache 5.7.0.1 on 2023-11-06 11:43:21 -->
